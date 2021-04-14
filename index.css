@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cont{
+    width: 100%;
+    height: 100vh;
+    background: url("./WhoWantsToBeAMillionaire_keyart.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.question{
+    width: 52%;
+    height: 80px;
+    background: black;
+    position: absolute;
+    top: 62%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+.answer{
+    width: 52%;
+    position: absolute;
+    top: 78%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;
+
+}
+
+.answer button{
+    margin: 10px;
+    width: 45%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+.answer button:hover{
+    background-color: rgb(33, 24, 151);
+    cursor: pointer;
+}
+
+#start{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#start #startGame{
+    width: 100%;
+
+}
+
+.card-body{
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: none;
+}
+
+#newgame{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+#newgame #endGame{
+    width: 100%;
+}
+
+@media (max-width:870px){
+    .cont .question{
+        width: 90%;
+    }
+     .question{
+        top: 25%;
+        height: auto;
+    }
+    .answer{
+        width: 80%;
+        top: 60%;
+    }
+    .cont .answer button{
+        width: 100%;
+    }
+    .cont #newgame{
+        top: 90%;
+    }
+}
